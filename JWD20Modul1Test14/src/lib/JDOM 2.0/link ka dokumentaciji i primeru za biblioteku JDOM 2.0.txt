@@ -1,7 +1,0 @@
-JDOMTM 2.0 documentation
-http://hunterhacker.github.io/jdom/jdom2/apidocs/org/jdom2/package-summary.html
-http://hunterhacker.github.io/jdom/jdom2/apidocs/org/jdom2/output/package-summary.html
-
-
-Primer koji koristi biblioteku JDOMTM pronadjen na formumu stackoverflow
-http://stackoverflow.com/questions/23520208/i-would-like-to-create-xml-file-using-java
