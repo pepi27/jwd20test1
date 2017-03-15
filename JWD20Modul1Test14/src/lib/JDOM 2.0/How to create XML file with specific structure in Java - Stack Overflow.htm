@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/QAPage"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>How to create XML file with specific structure in Java - Stack Overflow</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+    <link rel="apple-touch-icon image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com">
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="How to create XML file with specific structure in Java">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I would like to create XML file using Java. 
+
+My XML file structure:
+
+&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;
+&amp;lt;CONFIGURATION&amp;gt;
+    &amp;lt;BROWSER&amp;gt;chrome&amp;lt;/BROWSER&amp;gt;
+    &amp;lt;BASE&amp;gt;ht...">
+    <meta property="og:url" content="http://stackoverflow.com/questions/23520208/how-to-create-xml-file-with-specific-structure-in-java">
+    <link rel="canonical" href="http://stackoverflow.com/questions/23520208/how-to-create-xml-file-with-specific-structure-in-java">
+
+    
+    
+    <script async="" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/quant.js"></script><script async="" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/beacon.js"></script><script async="" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/analytics.js"></script><script type="text/javascript" async="" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/ados.js"></script><script src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/jquery.js"></script>
+    <script src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/stub.js"></script>
+    <link rel="stylesheet" type="text/css" href="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/all.css">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question 'How to create XML file with specific structure in Java'" href="http://stackoverflow.com/feeds/question/23520208">
+            <meta name="twitter:app:country" content="US">
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:iphone" content="871299723">
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/23520208/how-to-create-xml-file-with-specific-structure-in-java">
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:ipad" content="871299723">
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/23520208/how-to-create-xml-file-with-specific-structure-in-java">
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/23520208/how-to-create-xml-file-with-specific-structure-in-java">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+                                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:2,shownCommentCount:2,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:23520208});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '23520208');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text', true); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","serverTime":1484421902,"routeName":"Questions/Show","site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"enableInsertDocLinkDialog":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"c651846f17df8d8dad8c0cc55fb68463","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"ab":{"question_show_tweaks":{"v":"altern_unansw_cta","g":2},"question_page_hero":{"v":"delay_hero_3","g":1},"simplified_signup_form":{"v":"multi_check_email_copy","g":4},"mobile_signup_link":{"v":"simplified_signup_form:rdn","g":1}}},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true,"enableNewLinkInsertDialog":true,"enableNewHeaderDesign":true,"enableImgurHttps":true},"comments":{},"userProfile":{"openGraphAPIKey":"58740831ad23540e00c58987"},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"analytics":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"snippets":{"snippetsEnabled":true,"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"15d182778781","js/moderator.en.js":"6ac1015d4659","js/full-anon.en.js":"5a02d7639c4a","js/full.en.js":"2198dec45407","js/wmd.en.js":"fe0fff246e0e","js/third-party/jquery.autocomplete.min.js":"d3b8fa7fdf74","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"20710353f000","js/help.en.js":"a56fdf9b9ff2","js/tageditor.en.js":"09862381cd28","js/tageditornew.en.js":"d948aae6259d","js/inline-tag-editing.en.js":"2ddfa79492e7","js/revisions.en.js":"4ba8f70874c4","js/review.en.js":"ef7e9021e3f1","js/tagsuggestions.en.js":"7dfec0d2a2d7","js/post-validation.en.js":"b90d9bbe9b32","js/explore-qlist.en.js":"e71f14781288","js/events.en.js":"89fa875cc613","js/keyboard-shortcuts.en.js":"d4b03fb75dbe","js/external-editor.en.js":"235e80f649d7","js/external-editor.en.js":"235e80f649d7","js/snippet-javascript.en.js":"07323978556c","js/snippet-javascript-codemirror.en.js":"c3f49676e067"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+<script async="" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/full-anon.js"></script><script async="" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/snippet-javascript.js"></script><script async="" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/post-validation.js"></script><script async="" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/prettify-full.js"></script><script async="" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/external-editor.js"></script></head>
+<body class="question-page new-topbar">
+    <noscript><div id="noscript-padding"></div></noscript>
+            <script>(function () { var old = $.fn.contents; $.fn.contents = function () { try { return old.apply(this, arguments); } catch (e) { return $([]); } } })()</script>
+        <iframe id="adzerk-user-match" scrolling="no" onload="window.AUMIframeDone=true" src="https://ssum-sec.casalemedia.com/usermatch?s=183712&amp;cb=https%3A%2F%2Fengine.adzerk.net%2Fudb%2F22%2Fsync%2Fi.gif%3FpartnerId%3D1%26userId%3D" style="display: none;" marginheight="0" marginwidth="0" width="0" height="0" frameborder="0"></iframe>
+
+
+
+
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+    <div class="topbar-dialog siteSwitcher-dialog dno">
+        <div class="header">
+            <h3><a href="http://stackoverflow.com/">current community</a>
+            </h3>
+        </div>
+        <div class="modal-content current-site-container">
+            <ul class="current-site">
+                    <li>
+                            <div class="related-links">
+                    <a href="http://chat.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+            </div>
+
+
+
+
+    <a href="http://stackoverflow.com/" class="current-site-link site-link js-gps-track" data-id="1" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                    </li>
+                    <li class="related-site">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                        
+
+
+
+    <a href="http://meta.stackoverflow.com/" class="site-link js-gps-track" data-id="552" data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f23520208%2fhow-to-create-xml-file-with-specific-structure-in-java" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.
+                </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="http://stackoverflow.blog/" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+        </div>
+
+        <div class="network-items">
+                <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 163 Stack Exchange sites">
+                    <span class="hidden-text">Stack Exchange</span>
+                </a>
+
+    <a href="#" class="topbar-icon icon-inbox yes-hover js-inbox-button" title="Recent inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="display:none"></span>
+    </a>
+    <a href="#" class="topbar-icon icon-achievements yes-hover js-achievements-button" data-unread-class="" title="Recent achievements: reputation, badges, and privileges earned">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                    <a href="https://stackoverflow.com/users/signup?ssrc=head&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;utm_source=stackoverflow.com&amp;utm_medium=dev-story&amp;utm_campaign=signup-redirect" class="login-link" rel="nofollow">sign up</a>
+                                <a href="https://stackoverflow.com/users/login?ssrc=head&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f23520208%2fhow-to-create-xml-file-with-specific-structure-in-java" class="login-link" rel="nofollow">log in</a>
+
+                            <a href="http://stackoverflow.com/tour">tour</a>
+        <a href="#" class="icon-help js-help-button" title="Help Center and other resources">
+            help
+            <span class="triangle"></span>
+        </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://stackoverflow.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://stackoverflow.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="http://meta.stackoverflow.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.stackoverflowbusiness.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+                                            </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="/search" method="get" autocomplete="off">
+                        <input name="q" placeholder="Search Q&amp;A" tabindex="1" autocomplete="off" maxlength="240" type="text">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                            <li class="youarehere">
+        <a id="nav-questions" href="http://stackoverflow.com/questions" class="js-gps-track" data-gps-track="top_nav.click({is_current:true, location:3, destination:1})">
+        Questions
+        </a>
+    </li>
+
+    <li>
+        <a id="nav-jobs" href="http://stackoverflow.com/jobs?med=site-ui&amp;ref=jobs-tab" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:6})">
+        Jobs
+        </a>
+    </li>
+                            <li>
+        <a id="nav-docs" href="http://stackoverflow.com/documentation" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:7})">
+        Documentation
+        </a>
+    </li>
+                            <li>
+        <a id="nav-tags" href="http://stackoverflow.com/tags" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:2})">
+        Tags
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-users" href="http://stackoverflow.com/users" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:3})">
+        Users
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-badges" href="http://stackoverflow.com/help/badges" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:4})">
+        Badges
+        </a>
+    </li>
+
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://stackoverflow.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content" class="snippet-hidden">
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+    <link itemprop="image" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+
+
+    <div id="herobox" class="alternate">
+        <div class="test"></div>
+            <div id="close">
+                <a title="click to minimize"><span>x</span> Dismiss</a>
+            </div>
+        <div class="content">
+            <b>Join the Stack Overflow Community</b>
+            <div class="separator"></div>
+            <div class="blurb">
+                Stack Overflow is a community of 6.6 million programmers, just like you, helping each other.
+                    <br>
+Join them; it only takes a minute:                    <br>
+            </div>
+            <a href="http://stackoverflow.com/users/signup?ssrc=hero&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f23520208%2fhow-to-create-xml-file-with-specific-structure-in-java" id="tell-me-more" class="button">Sign up</a>
+        </div>
+    </div>
+<script>
+    StackExchange.ready(function () {
+
+        var location = 0;
+        if ($("body").hasClass("questions-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("question-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("faq-page")) {
+            location = 5;;
+        } else if ($("body").hasClass("home-page")) {
+            location = 3;;
+        }
+
+        $('#tell-me-more').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+            });
+        });
+        $('#herobox #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "minimize", location: location }, true);
+            });
+            $.cookie("hero", "mini", { path: "/", expires: 365 });
+            $.ajax({
+                url: "/hero-mini",
+                success: function (data) {
+                    $("#herobox").fadeOut("fast", function () {
+                        $("#herobox").replaceWith(data);
+                        $("#herobox-mini").fadeIn("fast");
+                    });
+                }
+            });
+            return false;
+        });
+    });
+
+</script>			<div id="question-header">
+                <h1 itemprop="name"><a href="http://stackoverflow.com/questions/23520208/how-to-create-xml-file-with-specific-structure-in-java" class="question-hyperlink">How to create XML file with specific structure in Java</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="23520208" id="question">
+
+    <script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk202480334",4).setZone(43); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk202480334"></div>    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input name="_id_" value="23520208" type="hidden">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">9</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="#">favorite</a>
+        <div class="favoritecount"><b>4</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>I would like to create <code>XML</code> file using <code>Java</code>. </p>
+
+<p>My <code>XML</code> file structure:</p>
+
+<pre class="default prettyprint prettyprinted" style=""><code><span class="pun">&lt;?</span><span class="pln">xml version</span><span class="pun">=</span><span class="str">"1.0"</span><span class="pln"> encoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pun">?&gt;</span><span class="pln">
+</span><span class="tag">&lt;CONFIGURATION&gt;</span><span class="pln">
+    </span><span class="tag">&lt;BROWSER&gt;</span><span class="pln">chrome</span><span class="tag">&lt;/BROWSER&gt;</span><span class="pln">
+    </span><span class="tag">&lt;BASE&gt;</span><span class="pln">http:fut</span><span class="tag">&lt;/BASE&gt;</span><span class="pln">
+    </span><span class="tag">&lt;ENVIRONMENT&gt;</span><span class="pln">abcd</span><span class="tag">&lt;/ENVIRONMENT&gt;</span><span class="pln">
+    </span><span class="tag">&lt;USER&gt;</span><span class="pln">john</span><span class="tag">&lt;/USER&gt;</span><span class="pln">
+    </span><span class="tag">&lt;PASSWORD&gt;</span><span class="pln">abcd123</span><span class="tag">&lt;/PASSWORD&gt;</span><span class="pln">
+    </span><span class="tag">&lt;ORGANIZATION&gt;</span><span class="pln">Tim</span><span class="tag">&lt;/ORGANIZATION&gt;</span><span class="pln">
+    </span><span class="tag">&lt;EMPLOYEE&gt;</span><span class="pln">
+        </span><span class="tag">&lt;EMP_NAME&gt;</span><span class="pln">Anhorn, Irene</span><span class="tag">&lt;/EMP_NAME&gt;</span><span class="pln">
+        </span><span class="tag">&lt;ACT_DATE&gt;</span><span class="pln">20131201</span><span class="tag">&lt;/ACT_DATE&gt;</span><span class="pln">
+        </span><span class="tag">&lt;DATE_IN&gt;</span><span class="pln">20131201</span><span class="tag">&lt;/DATE_IN&gt;</span><span class="pln">
+        </span><span class="tag">&lt;CLOCK_IN&gt;</span><span class="pln">0800</span><span class="tag">&lt;/CLOCK_IN&gt;</span><span class="pln">
+        </span><span class="tag">&lt;DATE_OUT&gt;</span><span class="pln">20131201</span><span class="tag">&lt;/DATE_OUT&gt;</span><span class="pln">
+        </span><span class="tag">&lt;CLOCK_OUT&gt;</span><span class="pln">1600</span><span class="tag">&lt;/CLOCK_OUT&gt;</span><span class="pln"> 
+    </span><span class="tag">&lt;/EMPLOYEE&gt;</span><span class="pln">
+    </span><span class="tag">&lt;EMPLOYEE&gt;</span><span class="pln">
+        </span><span class="tag">&lt;EMP_NAME&gt;</span><span class="pln">Arlegui, Karen Jay</span><span class="tag">&lt;/EMP_NAME&gt;</span><span class="pln">
+        </span><span class="tag">&lt;ACT_DATE&gt;</span><span class="pln">20131201</span><span class="tag">&lt;/ACT_DATE&gt;</span><span class="pln">
+        </span><span class="tag">&lt;DATE_IN&gt;</span><span class="pln">20131201</span><span class="tag">&lt;/DATE_IN&gt;</span><span class="pln">
+        </span><span class="tag">&lt;CLOCK_IN&gt;</span><span class="pln">1600</span><span class="tag">&lt;/CLOCK_IN&gt;</span><span class="pln">
+        </span><span class="tag">&lt;DATE_OUT&gt;</span><span class="pln">20131202</span><span class="tag">&lt;/DATE_OUT&gt;</span><span class="pln">
+        </span><span class="tag">&lt;CLOCK_OUT&gt;</span><span class="pln">0000</span><span class="tag">&lt;/CLOCK_OUT&gt;</span><span class="pln"> 
+    </span><span class="tag">&lt;/EMPLOYEE&gt;</span><span class="pln">
+</span><span class="tag">&lt;/CONFIGURATION&gt;</span></code></pre>
+    </div>
+    <div class="post-taglist">
+        <a href="http://stackoverflow.com/questions/tagged/java" class="post-tag js-gps-track" title="show questions tagged 'java'" rel="tag">java</a> <a href="http://stackoverflow.com/questions/tagged/xml" class="post-tag js-gps-track" title="show questions tagged 'xml'" rel="tag">xml</a> <a href="http://stackoverflow.com/questions/tagged/xml-parsing" class="post-tag js-gps-track" title="show questions tagged 'xml-parsing'" rel="tag">xml-parsing</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/q/23520208" title="short permalink to this question" class="short-link" id="link-post-23520208">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/23520208/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td class="post-signature" align="right">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/23520208/revisions" title="show all edits to this post">edited <span title="2016-06-29 15:29:37Z" class="relativetime">Jun 29 '16 at 15:29</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/2306173/alex-k"><div class="gravatar-wrapper-32"><img src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/tOsLu.gif" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/2306173/alex-k">Alex.K.</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,631</span><span title="7 gold badges"><span class="badge1"></span><span class="badgecount">7</span></span><span title="17 silver badges"><span class="badge2"></span><span class="badgecount">17</span></span><span title="30 bronze badges"><span class="badge3"></span><span class="badgecount">30</span></span>
+        </div>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2014-05-07 14:12:13Z" class="relativetime">May 7 '14 at 14:12</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/3438838/user3438838"><div class="gravatar-wrapper-32"><img src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/113c47d31d9d20d447a88d2d973ca58a.png" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/3438838/user3438838">user3438838</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">66</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-23520208" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-36076438" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of 'useful comment' votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Did you try any code ? Check <a href="http://www.mkyong.com/java/how-to-create-xml-file-in-java-dom/" rel="nofollow noreferrer">mkyong.com/java/how-to-create-xml-file-in-java-dom</a></span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/1781611/jay" title="2,125 reputation" class="comment-user">Jay</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="#comment36076438_23520208"><span title="2014-05-07 14:16:28Z" class="relativetime-clean">May 7 '14 at 14:16</span></a></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-36083057" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I tried it, but it didn't work :(</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/3438838/user3438838" title="66 reputation" class="comment-user owner">user3438838</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="#comment36083057_23520208"><span title="2014-05-07 16:46:18Z" class="relativetime-clean">May 7 '14 at 16:46</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-23520208" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="#" onclick=""></a>
+        </div>         
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								4 Answers
+                                <span style="display:none;" itemprop="answerCount">4</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://stackoverflow.com/questions/23520208/how-to-create-xml-file-with-specific-structure-in-java?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active" data-shortcut="A">
+            active</a>
+        <a href="http://stackoverflow.com/questions/23520208/how-to-create-xml-file-with-specific-structure-in-java?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest" data-shortcut="O">
+            oldest</a>
+        <a class="youarehere" href="http://stackoverflow.com/questions/23520208/how-to-create-xml-file-with-specific-structure-in-java?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+            votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="23520504"></a>
+<div id="answer-23520504" class="answer accepted-answer" data-answerid="23520504" itemscope="" itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input name="_id_" value="23520504" type="hidden">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">5</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You can use the <a href="http://www.jdom.org/" rel="nofollow">JDOM</a> library in Java.
+Define your tags as <a href="http://www.jdom.org/docs/apidocs/org/jdom2/Element.html" rel="nofollow">Element</a> objects, document your elements with <a href="http://www.jdom.org/docs/apidocs/org/jdom2/Document.html" rel="nofollow">Document Class</a>, and build your xml file with <a href="http://www.jdom.org/docs/apidocs/org/jdom2/input/SAXBuilder.html" rel="nofollow">SAXBuilder</a>. Try this example:</p>
+
+<pre class="default prettyprint prettyprinted" style=""><code><span class="typ">Element</span><span class="pln"> root</span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Element</span><span class="pun">(</span><span class="str">"CONFIGURATION"</span><span class="pun">);</span><span class="pln">
+</span><span class="typ">Document</span><span class="pln"> doc</span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Document</span><span class="pun">();</span><span class="pln">
+
+</span><span class="typ">Element</span><span class="pln"> child1</span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Element</span><span class="pun">(</span><span class="str">"BROWSER"</span><span class="pun">);</span><span class="pln">
+child1</span><span class="pun">.</span><span class="pln">addContent</span><span class="pun">(</span><span class="str">"chrome"</span><span class="pun">);</span><span class="pln">
+</span><span class="typ">Element</span><span class="pln"> child2</span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Element</span><span class="pun">(</span><span class="str">"BASE"</span><span class="pun">);</span><span class="pln">
+child1</span><span class="pun">.</span><span class="pln">addContent</span><span class="pun">(</span><span class="str">"http:fut"</span><span class="pun">);</span><span class="pln">
+</span><span class="typ">Element</span><span class="pln"> child3</span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Element</span><span class="pun">(</span><span class="str">"EMPLOYEE"</span><span class="pun">);</span><span class="pln">
+child3</span><span class="pun">.</span><span class="pln">addContent</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Element</span><span class="pun">(</span><span class="str">"EMP_NAME"</span><span class="pun">).</span><span class="pln">addContent</span><span class="pun">(</span><span class="str">"Anhorn, Irene"</span><span class="pun">));</span><span class="pln">
+
+root</span><span class="pun">.</span><span class="pln">addContent</span><span class="pun">(</span><span class="pln">child1</span><span class="pun">);</span><span class="pln">
+root</span><span class="pun">.</span><span class="pln">addContent</span><span class="pun">(</span><span class="pln">child2</span><span class="pun">);</span><span class="pln">
+root</span><span class="pun">.</span><span class="pln">addContent</span><span class="pun">(</span><span class="pln">child3</span><span class="pun">);</span><span class="pln">
+
+doc</span><span class="pun">.</span><span class="pln">setRootElement</span><span class="pun">(</span><span class="pln">root</span><span class="pun">);</span><span class="pln">
+
+</span><span class="typ">XMLOutputter</span><span class="pln"> outter</span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">XMLOutputter</span><span class="pun">();</span><span class="pln">
+outter</span><span class="pun">.</span><span class="pln">setFormat</span><span class="pun">(</span><span class="typ">Format</span><span class="pun">.</span><span class="pln">getPrettyFormat</span><span class="pun">());</span><span class="pln">
+outter</span><span class="pun">.</span><span class="pln">output</span><span class="pun">(</span><span class="pln">doc</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">FileWriter</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">File</span><span class="pun">(</span><span class="str">"myxml.xml"</span><span class="pun">)));</span></code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/23520504" title="short permalink to this answer" class="short-link" id="link-post-23520504">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/23520504/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td class="post-signature" align="right">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/23520504/revisions" title="show all edits to this post">edited <span title="2015-05-11 18:23:50Z" class="relativetime">May 11 '15 at 18:23</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/701303/alex-wittig"><div class="gravatar-wrapper-32"><img src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/gqgfI.png" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/701303/alex-wittig">Alex Wittig</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,394</span><span title="11 silver badges"><span class="badge2"></span><span class="badgecount">11</span></span><span title="26 bronze badges"><span class="badge3"></span><span class="badgecount">26</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-05-07 14:24:40Z" class="relativetime">May 7 '14 at 14:24</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/2999385/ahmad"><div class="gravatar-wrapper-32"><img src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/ce989e50ade273d67bc5a44d7121482c.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/2999385/ahmad">Ahmad</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">515</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="5 silver badges"><span class="badge2"></span><span class="badgecount">5</span></span><span title="21 bronze badges"><span class="badge3"></span><span class="badgecount">21</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-23520504" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-23520504" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk1970863137",4).setZone(44); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk1970863137"></div>
+  
+<a name="23520634"></a>
+<div id="answer-23520634" class="answer" data-answerid="23520634" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input name="_id_" value="23520634" type="hidden">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">9</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>There is no need for any External libraries, the JRE System libraries provide all you need.</p>
+
+<p>I am infering that you have a <code>org.w3c.dom.Document</code> object you would like to write to a file</p>
+
+<p>To do that, you use a <code>javax.xml.transform.Transformer</code>:</p>
+
+<pre class="default prettyprint prettyprinted" style=""><code><span class="kwd">import</span><span class="pln"> org</span><span class="pun">.</span><span class="pln">w3c</span><span class="pun">.</span><span class="pln">dom</span><span class="pun">.</span><span class="typ">Document</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">xml</span><span class="pun">.</span><span class="pln">transform</span><span class="pun">.</span><span class="typ">Transformer</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">xml</span><span class="pun">.</span><span class="pln">transform</span><span class="pun">.</span><span class="typ">TransformerFactory</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">xml</span><span class="pun">.</span><span class="pln">transform</span><span class="pun">.</span><span class="typ">TransformerException</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">xml</span><span class="pun">.</span><span class="pln">transform</span><span class="pun">.</span><span class="typ">TransformerConfigurationException</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">xml</span><span class="pun">.</span><span class="pln">transform</span><span class="pun">.</span><span class="pln">dom</span><span class="pun">.</span><span class="typ">DOMSource</span><span class="pun">;</span><span class="pln"> 
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">xml</span><span class="pun">.</span><span class="pln">transform</span><span class="pun">.</span><span class="pln">stream</span><span class="pun">.</span><span class="typ">StreamResult</span><span class="pun">;</span><span class="pln"> 
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">XMLWriter</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> writeDocumentToFile</span><span class="pun">(</span><span class="typ">Document</span><span class="pln"> document</span><span class="pun">,</span><span class="pln"> </span><span class="typ">File</span><span class="pln"> file</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+        </span><span class="com">// Make a transformer factory to create the Transformer</span><span class="pln">
+        </span><span class="typ">TransformerFactory</span><span class="pln"> tFactory </span><span class="pun">=</span><span class="pln"> </span><span class="typ">TransformerFactory</span><span class="pun">.</span><span class="pln">newInstance</span><span class="pun">();</span><span class="pln">
+
+        </span><span class="com">// Make the Transformer</span><span class="pln">
+        </span><span class="typ">Transformer</span><span class="pln"> transformer </span><span class="pun">=</span><span class="pln"> tFactory</span><span class="pun">.</span><span class="pln">newTransformer</span><span class="pun">();</span><span class="pln">
+
+        </span><span class="com">// Mark the document as a DOM (XML) source</span><span class="pln">
+        </span><span class="typ">DOMSource</span><span class="pln"> source </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">DOMSource</span><span class="pun">(</span><span class="pln">document</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="com">// Say where we want the XML to go</span><span class="pln">
+        </span><span class="typ">StreamResult</span><span class="pln"> result </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">StreamResult</span><span class="pun">(</span><span class="pln">file</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="com">// Write the XML to file</span><span class="pln">
+        transformer</span><span class="pun">.</span><span class="pln">transform</span><span class="pun">(</span><span class="pln">source</span><span class="pun">,</span><span class="pln"> result</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>Source: <a href="http://docs.oracle.com/javaee/1.4/tutorial/doc/JAXPXSLT4.html">http://docs.oracle.com/javaee/1.4/tutorial/doc/JAXPXSLT4.html</a></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/23520634" title="short permalink to this answer" class="short-link" id="link-post-23520634">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/23520634/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-05-07 14:29:40Z" class="relativetime">May 7 '14 at 14:29</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/3209348/dirkyjerky"><div class="gravatar-wrapper-32"><img src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/30cc6bf1460b8cc9b5ff83178dfce208.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/3209348/dirkyjerky">DirkyJerky</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">724</span><span title="2 silver badges"><span class="badge2"></span><span class="badgecount">2</span></span><span title="9 bronze badges"><span class="badge3"></span><span class="badgecount">9</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-23520634" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-23520634" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="23520327"></a>
+<div id="answer-23520327" class="answer" data-answerid="23520327" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input name="_id_" value="23520327" type="hidden">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">7</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Use JAXB:
+<a href="http://www.mkyong.com/java/jaxb-hello-world-example/">http://www.mkyong.com/java/jaxb-hello-world-example/</a></p>
+
+<pre class="default prettyprint prettyprinted" style=""><code><span class="kwd">package</span><span class="pln"> com</span><span class="pun">.</span><span class="pln">mkyong</span><span class="pun">.</span><span class="pln">core</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">xml</span><span class="pun">.</span><span class="pln">bind</span><span class="pun">.</span><span class="pln">annotation</span><span class="pun">.</span><span class="typ">XmlAttribute</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">xml</span><span class="pun">.</span><span class="pln">bind</span><span class="pun">.</span><span class="pln">annotation</span><span class="pun">.</span><span class="typ">XmlElement</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">xml</span><span class="pun">.</span><span class="pln">bind</span><span class="pun">.</span><span class="pln">annotation</span><span class="pun">.</span><span class="typ">XmlRootElement</span><span class="pun">;</span><span class="pln">
+
+</span><span class="lit">@XmlRootElement</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Customer</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="typ">String</span><span class="pln"> name</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">int</span><span class="pln"> age</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">int</span><span class="pln"> id</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getName</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> name</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@XmlElement</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setName</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> name</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">name </span><span class="pun">=</span><span class="pln"> name</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> getAge</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> age</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@XmlElement</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setAge</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> age</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">age </span><span class="pun">=</span><span class="pln"> age</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> getId</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> id</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@XmlAttribute</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setId</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> id</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">id </span><span class="pun">=</span><span class="pln"> id</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+
+
+
+<pre class="default prettyprint prettyprinted" style=""><code><span class="kwd">package</span><span class="pln"> com</span><span class="pun">.</span><span class="pln">mkyong</span><span class="pun">.</span><span class="pln">core</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">io</span><span class="pun">.</span><span class="typ">File</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">xml</span><span class="pun">.</span><span class="pln">bind</span><span class="pun">.</span><span class="typ">JAXBContext</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">xml</span><span class="pun">.</span><span class="pln">bind</span><span class="pun">.</span><span class="typ">JAXBException</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">xml</span><span class="pun">.</span><span class="pln">bind</span><span class="pun">.</span><span class="typ">Marshaller</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">JAXBExample</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+      </span><span class="typ">Customer</span><span class="pln"> customer </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Customer</span><span class="pun">();</span><span class="pln">
+      customer</span><span class="pun">.</span><span class="pln">setId</span><span class="pun">(</span><span class="lit">100</span><span class="pun">);</span><span class="pln">
+      customer</span><span class="pun">.</span><span class="pln">setName</span><span class="pun">(</span><span class="str">"mkyong"</span><span class="pun">);</span><span class="pln">
+      customer</span><span class="pun">.</span><span class="pln">setAge</span><span class="pun">(</span><span class="lit">29</span><span class="pun">);</span><span class="pln">
+
+      </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+        </span><span class="typ">File</span><span class="pln"> file </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">File</span><span class="pun">(</span><span class="str">"C:\\file.xml"</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">JAXBContext</span><span class="pln"> jaxbContext </span><span class="pun">=</span><span class="pln"> </span><span class="typ">JAXBContext</span><span class="pun">.</span><span class="pln">newInstance</span><span class="pun">(</span><span class="typ">Customer</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">Marshaller</span><span class="pln"> jaxbMarshaller </span><span class="pun">=</span><span class="pln"> jaxbContext</span><span class="pun">.</span><span class="pln">createMarshaller</span><span class="pun">();</span><span class="pln">
+
+        </span><span class="com">// output pretty printed</span><span class="pln">
+        jaxbMarshaller</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="typ">Marshaller</span><span class="pun">.</span><span class="pln">JAXB_FORMATTED_OUTPUT</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">);</span><span class="pln">
+
+        jaxbMarshaller</span><span class="pun">.</span><span class="pln">marshal</span><span class="pun">(</span><span class="pln">customer</span><span class="pun">,</span><span class="pln"> file</span><span class="pun">);</span><span class="pln">
+        jaxbMarshaller</span><span class="pun">.</span><span class="pln">marshal</span><span class="pun">(</span><span class="pln">customer</span><span class="pun">,</span><span class="pln"> </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">);</span><span class="pln">
+
+      </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">JAXBException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+      </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/23520327" title="short permalink to this answer" class="short-link" id="link-post-23520327">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/23520327/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td class="post-signature" align="right">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/23520327/revisions" title="show all edits to this post">edited <span title="2015-05-11 18:30:09Z" class="relativetime">May 11 '15 at 18:30</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/701303/alex-wittig"><div class="gravatar-wrapper-32"><img src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/gqgfI.png" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/701303/alex-wittig">Alex Wittig</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,394</span><span title="11 silver badges"><span class="badge2"></span><span class="badgecount">11</span></span><span title="26 bronze badges"><span class="badge3"></span><span class="badgecount">26</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2014-05-07 14:17:38Z" class="relativetime">May 7 '14 at 14:17</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/2447599/ran"><div class="gravatar-wrapper-32"><img src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/xXP4z.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/2447599/ran">ran</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,333</span><span title="10 silver badges"><span class="badge2"></span><span class="badgecount">10</span></span><span title="14 bronze badges"><span class="badge3"></span><span class="badgecount">14</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-23520327" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-23520327" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="35295095"></a>
+<div id="answer-35295095" class="answer" data-answerid="35295095" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input name="_id_" value="35295095" type="hidden">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">7</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<pre class="default prettyprint prettyprinted" style=""><code><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="typ">DocumentBuilderFactory</span><span class="pln"> docFactory </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DocumentBuilderFactory</span><span class="pun">.</span><span class="pln">newInstance</span><span class="pun">();</span><span class="pln">
+    </span><span class="typ">DocumentBuilder</span><span class="pln"> docBuilder </span><span class="pun">=</span><span class="pln"> docFactory</span><span class="pun">.</span><span class="pln">newDocumentBuilder</span><span class="pun">();</span><span class="pln">
+    </span><span class="typ">Document</span><span class="pln"> doc </span><span class="pun">=</span><span class="pln"> docBuilder</span><span class="pun">.</span><span class="pln">newDocument</span><span class="pun">();</span><span class="pln">
+    </span><span class="typ">Element</span><span class="pln"> rootElement </span><span class="pun">=</span><span class="pln"> doc</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="str">"CONFIGURATION"</span><span class="pun">);</span><span class="pln">
+    doc</span><span class="pun">.</span><span class="pln">appendChild</span><span class="pun">(</span><span class="pln">rootElement</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">Element</span><span class="pln"> browser </span><span class="pun">=</span><span class="pln"> doc</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="str">"BROWSER"</span><span class="pun">);</span><span class="pln">
+    browser</span><span class="pun">.</span><span class="pln">appendChild</span><span class="pun">(</span><span class="pln">doc</span><span class="pun">.</span><span class="pln">createTextNode</span><span class="pun">(</span><span class="str">"chrome"</span><span class="pun">));</span><span class="pln">
+    rootElement</span><span class="pun">.</span><span class="pln">appendChild</span><span class="pun">(</span><span class="pln">browser</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">Element</span><span class="pln"> </span><span class="kwd">base</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> doc</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="str">"BASE"</span><span class="pun">);</span><span class="pln">
+    </span><span class="kwd">base</span><span class="pun">.</span><span class="pln">appendChild</span><span class="pun">(</span><span class="pln">doc</span><span class="pun">.</span><span class="pln">createTextNode</span><span class="pun">(</span><span class="str">"http:fut"</span><span class="pun">));</span><span class="pln">
+    rootElement</span><span class="pun">.</span><span class="pln">appendChild</span><span class="pun">(</span><span class="kwd">base</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">Element</span><span class="pln"> employee </span><span class="pun">=</span><span class="pln"> doc</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="str">"EMPLOYEE"</span><span class="pun">);</span><span class="pln">
+    rootElement</span><span class="pun">.</span><span class="pln">appendChild</span><span class="pun">(</span><span class="pln">employee</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">Element</span><span class="pln"> empName </span><span class="pun">=</span><span class="pln"> doc</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="str">"EMP_NAME"</span><span class="pun">);</span><span class="pln">
+    empName</span><span class="pun">.</span><span class="pln">appendChild</span><span class="pun">(</span><span class="pln">doc</span><span class="pun">.</span><span class="pln">createTextNode</span><span class="pun">(</span><span class="str">"Anhorn, Irene"</span><span class="pun">));</span><span class="pln">
+    employee</span><span class="pun">.</span><span class="pln">appendChild</span><span class="pun">(</span><span class="pln">empName</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">Element</span><span class="pln"> actDate </span><span class="pun">=</span><span class="pln"> doc</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="str">"ACT_DATE"</span><span class="pun">);</span><span class="pln">
+    actDate</span><span class="pun">.</span><span class="pln">appendChild</span><span class="pun">(</span><span class="pln">doc</span><span class="pun">.</span><span class="pln">createTextNode</span><span class="pun">(</span><span class="str">"20131201"</span><span class="pun">));</span><span class="pln">
+    employee</span><span class="pun">.</span><span class="pln">appendChild</span><span class="pun">(</span><span class="pln">actDate</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">TransformerFactory</span><span class="pln"> transformerFactory </span><span class="pun">=</span><span class="pln"> </span><span class="typ">TransformerFactory</span><span class="pun">.</span><span class="pln">newInstance</span><span class="pun">();</span><span class="pln">
+    </span><span class="typ">Transformer</span><span class="pln"> transformer </span><span class="pun">=</span><span class="pln"> transformerFactory</span><span class="pun">.</span><span class="pln">newTransformer</span><span class="pun">();</span><span class="pln">
+    </span><span class="typ">DOMSource</span><span class="pln"> source </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">DOMSource</span><span class="pun">(</span><span class="pln">doc</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">StreamResult</span><span class="pln"> result </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">StreamResult</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">File</span><span class="pun">(</span><span class="str">"/Users/myXml/ScoreDetail.xml"</span><span class="pun">));</span><span class="pln">
+    transformer</span><span class="pun">.</span><span class="pln">transform</span><span class="pun">(</span><span class="pln">source</span><span class="pun">,</span><span class="pln"> result</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"File saved!"</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ParserConfigurationException</span><span class="pln"> pce</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    pce</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">TransformerException</span><span class="pln"> tfe</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    tfe</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();}}</span></code></pre>
+
+<p>The values in you XML is Hard coded. </p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/35295095" title="short permalink to this answer" class="short-link" id="link-post-35295095">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/35295095/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2016-02-09 14:53:31Z" class="relativetime">Feb 9 '16 at 14:53</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/5825835/tamil-veera-cholan"><div class="gravatar-wrapper-32"><img src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/9jQwN.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/5825835/tamil-veera-cholan">Tamil veera Cholan</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">119</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="11 bronze badges"><span class="badge3"></span><span class="badgecount">11</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-35295095" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-35295095" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+									<a name="new-answer"></a>
+						<form id="post-form" action="/questions/23520208/answer/submit" method="post" class="post-form">
+						    <input id="post-id" value="23520208" type="hidden">
+                            <input id="qualityBanWarningShown" name="qualityBanWarningShown" value="false" type="hidden">
+                            <input name="referrer" value="" type="hidden">
+							<h2 class="space">Your Answer</h2>
+
+
+            <script>
+            StackExchange.ifUsing("editor", function () {
+                StackExchange.using("externalEditor", function () {
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.init();
+                    });
+                });
+            }, "code-snippets");
+        </script>
+    
+
+<script>
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+       
+        StackExchange.using("externalEditor", function() {
+                // Have to fire editor after snippets, if snippets enabled
+                if (StackExchange.settings.snippets.snippetsEnabled) {
+                    StackExchange.using("snippets", function() {
+                        createEditor();
+                    });
+                }
+                else {
+                    createEditor();
+                }
+            });
+
+            function createEditor() {
+                prepareEditor({
+                    heartbeatType: 'answer',
+                convertImagesToLinks: true,
+                reputationToPostImages: 10,
+                bindNavPrevention: true,
+                postfix: "",
+                    onDemand: true,
+                    discardSelector: ".discard-answer"
+                    ,immediatelyShowMarkdownHelp:true
+                    });
+                
+
+        }
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor js-post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li id="wmd-bold-button" class="wmd-button" style="left: 0px;"><span style="background-position: 0px -20px;"></span></li><li id="wmd-italic-button" class="wmd-button" style="left: 25px;"><span style="background-position: -20px -20px;"></span></li><li id="wmd-spacer1" class="wmd-spacer" style="left: 50px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-link-button" class="wmd-button" style="left: 75px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-quote-button" class="wmd-button" style="left: 100px;"><span style="background-position: -60px -20px;"></span></li><li id="wmd-code-button" class="wmd-button" style="left: 125px;"><span style="background-position: -80px -20px;"></span></li><li id="wmd-image-button" class="wmd-button" style="left: 150px;"><span style="background-position: -100px -20px;"></span></li><li id="wmd-spacer2" class="wmd-spacer" style="left: 175px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-olist-button" class="wmd-button" style="left: 200px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-ulist-button" class="wmd-button" style="left: 225px;"><span style="background-position: -140px -20px;"></span></li><li id="wmd-heading-button" class="wmd-button" style="left: 250px;"><span style="background-position: -160px -20px;"></span></li><li id="wmd-hr-button" class="wmd-button" style="left: 275px;"><span style="background-position: -180px -20px;"></span></li><li id="wmd-spacer3" class="wmd-spacer" style="left: 300px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-undo-button" class="wmd-button" style="left: 325px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-redo-button" class="wmd-button" style="left: 350px;"><span style="background-position: -220px -20px;"></span></li></ul></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" value="c651846f17df8d8dad8c0cc55fb68463" type="hidden">
+        <input id="author" name="author" type="text">
+    </div>
+
+
+
+</div>
+							<div style="position: relative;">
+								
+								            <div class="form-item new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="http://stackoverflow.com/users/login?ssrc=question_page&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f23520208%2fhow-to-create-xml-file-with-specific-structure-in-java%23new-answer">log in</a></h3>
+                        <script>
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Email and Password</span></p>
+                        </div>
+                    </div>
+                    <input name="manual-openid" class="manual-openid" type="hidden">
+                    <input name="use-facebook" class="use-facebook" value="false" type="hidden">
+                    <input name="use-google" class="use-google" value="false" type="hidden">
+                    <input class="submit-openid" value="Submit" style="display:none" type="button">
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tbody><tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" size="30" maxlength="30" tabindex="105" type="text">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" size="30" maxlength="100" tabindex="106" placeholder="required, but never shown" type="email">
+                </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', 'http%3a%2f%2fstackoverflow.com%2fquestions%2f23520208%2fhow-to-create-xml-file-with-specific-structure-in-java%23new-answer', 'question_page');
+                    }
+                );
+            </script>
+            <noscript>
+                        <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown" />
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+            </noscript>
+
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" value="Post Your Answer" tabindex="110" type="submit">
+									<a href="#" class="btn-clear discard-answer dno">discard</a>
+
+<p class="privacy-policy-agreement">
+By posting your answer, you agree to the <a href="http://stackexchange.com/legal/privacy-policy" name="privacy" target="_blank">privacy policy</a> and <a href="http://stackexchange.com/legal/terms-of-service" name="tos" target="_blank">terms of service</a>.</p>
+<input name="legalLinksShown" value="1" type="hidden">								</div>
+						</form>
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://stackoverflow.com/questions/tagged/java" class="post-tag" title="show questions tagged 'java'" rel="tag">java</a> <a href="http://stackoverflow.com/questions/tagged/xml" class="post-tag" title="show questions tagged 'xml'" rel="tag">xml</a> <a href="http://stackoverflow.com/questions/tagged/xml-parsing" class="post-tag" title="show questions tagged 'xml-parsing'" rel="tag">xml-parsing</a>  or <a href="http://stackoverflow.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2014-05-07 14:12:13Z"><b>2 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>31871 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://stackoverflow.com/questions/23520208/how-to-create-xml-file-with-specific-structure-in-java?lastactivity" class="lastactivity-link" title="2016-06-29 15:29:37Z">6 months ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+			<div class="module community-bulletin" data-tracker="cb=1">
+    <div class="related">
+                <div class="bulletin-title">
+                    Blog
+                </div>
+                <hr>
+    <div class="spacer">
+        <div class="bulletin-item-type">
+                <a href="http://stackoverflow.blog/2017/01/The-2017-Stack-Overflow-Developer-Survey-is-Now-Live/?cb=1" class="question-hyperlink">
+<div class="favicon favicon-stackexchangemeta" title="Meta Stack Exchange"></div>                </a>
+            </div>
+                <div class="bulletin-item-content">
+                    <a href="http://stackoverflow.blog/2017/01/The-2017-Stack-Overflow-Developer-Survey-is-Now-Live/?cb=1" class="question-hyperlink">The 2017 Stack Overflow Developer Survey is Now Live</a>
+                </div>
+                <br class="cbt">
+            </div>
+    </div>
+</div>			
+			<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk1259995427",[5,17,2221]).setZone(45); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk1259995427"></div>
+            <div id="hireme"></div>
+        <script>
+window.clcfl_request = 'AtsqkgmzPNQIAAAAANDjZgECAAAAAgAAAAAWAAAAfGphdmF8eG1sfHhtbC1wYXJzaW5nfACGNDcT8PGew2T9';
+;(function(n){var t,r,i;try{if(typeof[].indexOf!="function")return;if(window.attachEvent&&!window.addEventListener)return;if(n.allowed[0]!=="*"&&n.allowed.indexOf(location.hostname)===-1)return;t=window;t.clc=t.clc||{};r=t.clc_request||t.clcfl_request;r||console.warn("clc_request missing");t.clc.init=t.clc.init||[];t.clc.init.push(function(n){return n.load()});t.clc.options=n;i=document.createElement("script");i.async=!0;i.src=n.lib;document.body.appendChild(i)}catch(u){console.error("[clc] Error in loader:",u)}}).call(null, {"azw":true,"kt":2000,"tto":true,"autoload":true,"d":{"sb":["hireme","clc-sb"],"tlb":["careers1","clc-tlb"],"mlb":["careers3","clc-mlb"]},"allowed":["stackoverflow.com","serverfault.com","blog.codinghorror.com","talent.stackoverflow.com"],"h":"clc.stackoverflow.com","u":"//clc.stackoverflow.com/markup.js","lib":"//cdn.sstatic.net/clc/clc.min.js?v=1492847a8483"});        </script>
+			<div class="module" id="chat-feature">
+
+    <h4><a href="http://chat.stackoverflow.com/" id="h-chat-link" title="55 users active in 31 rooms the last 60 minutes">55 People Chatting</a></h4>
+    <div class="related" id="ad502-rooms"><div class="ad502-room"><h3 class="ad502-room-h3"><span class="ad502-room-title" title="JavaScript"><a href="http://chat.stackoverflow.com/rooms/17">JavaScript</a></span></h3><span title="2017-01-14 11:50:40Z" class="ad502-last-message">7 hours ago - <a href="http://chat.stackoverflow.com/users/617762">Zirak</a></span><br><div class="ad502-users"><a href="http://chat.stackoverflow.com/users/617762"><img title="Zirak: 7 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/348d335cd13298e475eeaefa1841dee6.png" width="23" height="23"></a><a href="http://chat.stackoverflow.com/users/3161092"><img title="towc: 7 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/oVs5E.png" width="23" height="23"></a><a href="http://chat.stackoverflow.com/users/5448799"><img title="star: 7 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/ivi9W.jpg" width="23" height="23"></a><a href="http://chat.stackoverflow.com/users/1947276"><img title="little pootis: 7 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/F8tJi.jpg" width="23" height="23"></a><a href="http://chat.stackoverflow.com/users/957731"><img title="ivarni: 9 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/tp9dK.jpg" width="23" height="23"></a><a href="http://chat.stackoverflow.com/users/345257"><img title="Mosho: 13 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/j05a6.png" width="23" height="23"></a><a href="http://chat.stackoverflow.com/users/322395"><img title="Loktar: 13 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/KwBES.png" width="23" height="23"></a></div></div><div class="ad502-room"><h3 class="ad502-room-h3"><span class="ad502-room-title" title="Lounge&lt;C++&gt;"><a href="http://chat.stackoverflow.com/rooms/10">Lounge&lt;C++&gt;</a></span></h3><span title="2017-01-14 11:54:54Z" class="ad502-last-message">7 hours ago - <a href="http://chat.stackoverflow.com/users/1364752">Morwenn</a></span><br><div class="ad502-users"><a href="http://chat.stackoverflow.com/users/1364752"><img title="Morwenn: 7 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/pUIho.jpg" width="23" height="23"></a><a href="http://chat.stackoverflow.com/users/1737909"><img title="Ven: 7 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/ff56e1492c7311f8c29742d6f493bb9e.png" width="23" height="23"></a><a href="http://chat.stackoverflow.com/users/85371"><img title="sehe: 7 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/6d52c235ec6dd15f30bab444103e7af2.png" width="23" height="23"></a><a href="http://chat.stackoverflow.com/users/4910004"><img title="VermillionAzure: 7 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/rwYcz.png" width="23" height="23"></a><a href="http://chat.stackoverflow.com/users/2369847"><img title="Telkitty: 7 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/EhIgM.png" width="23" height="23"></a><a href="http://chat.stackoverflow.com/users/1691280"><img title="Brandin: 7 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/f06b990f79e44451679541f695648de4.png" width="23" height="23"></a><a href="http://chat.stackoverflow.com/users/703016"><img title="Cheuk Kin Sing: 7 hours ago" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/ODuy0.jpg" width="23" height="23"></a></div></div></div>
+    <script>
+    // <!--
+        StackExchange.ready(
+        function () {
+            var options = {
+                chatUrl: 'http://chat.stackoverflow.com',
+                reloadUrl: '/api/recent-chat',
+                preloadData: {"activeUsers":55,"activeRooms":31,"rooms":[{"name":"JavaScript","id":17,"lastPost":1484394640,"posts":3777978,"users":[{"name":"Zirak","id":617762,"emailhash":"348d335cd13298e475eeaefa1841dee6","lastPost":1484394640},{"name":"towc","id":3161092,"emailhash":"!https://i.stack.imgur.com/oVs5E.png?s=128\u0026g=1","lastPost":1484394629},{"name":"star","id":5448799,"emailhash":"!https://i.stack.imgur.com/ivi9W.jpg?s=128\u0026g=1","lastPost":1484394115},{"name":"little pootis","id":1947276,"emailhash":"!https://i.stack.imgur.com/F8tJi.jpg?s=128\u0026g=1","lastPost":1484394089},{"name":"ivarni","id":957731,"emailhash":"!https://i.stack.imgur.com/tp9dK.jpg?s=128\u0026g=1","lastPost":1484387746},{"name":"Mosho","id":345257,"emailhash":"!https://i.stack.imgur.com/j05a6.png?s=128\u0026g=1","lastPost":1484373560},{"name":"Loktar","id":322395,"emailhash":"!https://i.stack.imgur.com/KwBES.png?s=128\u0026g=1","lastPost":1484371696}],"messages":[{"date":1484394640,"user":"Zirak","userid":617762}],"singleImage":false,"tags":["ecmascript","ecmascript-6","javascript","nodejs","typescript"]},{"name":"Lounge\u003cC++\u003e","id":10,"lastPost":1484394894,"posts":4816668,"users":[{"name":"Morwenn","id":1364752,"emailhash":"!https://i.stack.imgur.com/pUIho.jpg?s=128\u0026g=1","lastPost":1484394894},{"name":"Ven","id":1737909,"emailhash":"ff56e1492c7311f8c29742d6f493bb9e","lastPost":1484394880},{"name":"sehe","id":85371,"emailhash":"6d52c235ec6dd15f30bab444103e7af2","lastPost":1484394651},{"name":"VermillionAzure","id":4910004,"emailhash":"!https://i.stack.imgur.com/rwYcz.png?s=128\u0026g=1","lastPost":1484394647},{"name":"Telkitty","id":2369847,"emailhash":"!https://i.stack.imgur.com/EhIgM.png?s=128\u0026g=1","lastPost":1484394628},{"name":"Brandin","id":1691280,"emailhash":"f06b990f79e44451679541f695648de4","lastPost":1484394580},{"name":"Cheuk Kin Sing","id":703016,"emailhash":"!https://i.stack.imgur.com/ODuy0.jpg?s=128\u0026g=1","lastPost":1484394508}],"messages":[{"date":1484394894,"user":"Morwenn","userid":1364752}],"singleImage":false,"tags":["c++","c++11","c++14","c++-faq"]}]} 
+            };
+
+            StackExchange.chatAd.init(options);
+        });
+    // -->
+    </script>
+
+</div>
+
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/36785476?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/36785476/how-can-i-create-a-xml-file-using-java?noredirect=1&amp;lq=1" class="question-hyperlink">How can I create a XML file using JAVA</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/36174793?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/36174793/save-xml-format-to-a-string-instead-of-a-file?noredirect=1&amp;lq=1" class="question-hyperlink">Save XML format to a string instead of a file</a>
+</div>			</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/2885173?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">797</div></a><a href="http://stackoverflow.com/questions/2885173/how-do-i-create-a-file-and-write-to-a-file-in-java?rq=1" class="question-hyperlink">How do I create a file and write to a file in Java?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/3577641?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">1548</div></a><a href="http://stackoverflow.com/questions/3577641/how-do-you-parse-and-process-html-xml-in-php?rq=1" class="question-hyperlink">How do you parse and process HTML/XML in PHP?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/5545619?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">3</div></a><a href="http://stackoverflow.com/questions/5545619/how-can-i-efficiently-parse-200-000-xml-files-in-java?rq=1" class="question-hyperlink">How can I efficiently parse 200,000 XML files in Java?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/6470651?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">1962</div></a><a href="http://stackoverflow.com/questions/6470651/creating-a-memory-leak-with-java?rq=1" class="question-hyperlink">Creating a memory leak with Java</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/7373567?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">48</div></a><a href="http://stackoverflow.com/questions/7373567/java-how-to-read-and-write-xml-files?rq=1" class="question-hyperlink">Java: How to read and write xml files?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/7607327?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">31</div></a><a href="http://stackoverflow.com/questions/7607327/how-to-create-a-xml-object-from-string-in-java?rq=1" class="question-hyperlink">How to create a XML object from String in Java?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/7972705?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">1</div></a><a href="http://stackoverflow.com/questions/7972705/creating-parsing-xml-files-based-off-schemas-in-java?rq=1" class="question-hyperlink">Creating/Parsing XML files based off schemas in Java</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/12766285?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">0</div></a><a href="http://stackoverflow.com/questions/12766285/create-an-xml-file-for-my-java-objects?rq=1" class="question-hyperlink">Create an xml file for my java objects</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/20537374?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">0</div></a><a href="http://stackoverflow.com/questions/20537374/how-to-create-a-xml-structure-programatically-in-java?rq=1" class="question-hyperlink">how to create a xml structure programatically in java</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/36937793?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">-1</div></a><a href="http://stackoverflow.com/questions/36937793/how-to-create-xml-file-using-java?rq=1" class="question-hyperlink">How to create xml file using Java?</a></div>
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="http://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/93142/pcs-that-like-to-push-the-envelope" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    PCs that like to "push the envelope."
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-travel" title="Travel Stack Exchange"></div><a href="http://travel.stackexchange.com/questions/85833/is-it-offensive-to-use-saigon-instead-of-ho-chi-minh-city" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:273 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it offensive to use 'Saigon' instead of 'Ho Chi Minh City'?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="http://tex.stackexchange.com/questions/348670/declaremathoperator-with-language-dependence" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Declaremathoperator with language dependence
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-serverfault" title="Server Fault"></div><a href="http://serverfault.com/questions/826032/has-my-isp-mangled-my-dns-reverse-lookup-record-for-a-single-static-ip-address" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:2 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Has my ISP mangled my DNS reverse lookup record for a single static IP address?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/82887/how-honest-should-one-be-with-their-students-when-talking-about-the-realities-of" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How honest should one be with their students when talking about the realities of academia?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/2097515/a-continuous-function-on-a-half-closed-interval" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    A continuous function on a half-closed interval
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/368266/is-this-question-correctly-constructed" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is this question correctly constructed?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-money" title="Personal Finance &amp; Money Stack Exchange"></div><a href="http://money.stackexchange.com/questions/74710/bequeathed-condo-left-to-three-children-how-to-sell-if-one-party-disagrees" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:93 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Bequeathed condo left to three children. How to sell if one party disagrees?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/67826/castle-moat-full-of-zombies" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Castle Moat Full of Zombies
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-movies" title="Movies &amp; TV Stack Exchange"></div><a href="http://movies.stackexchange.com/questions/66827/what-is-the-meaning-and-significance-of-the-quote-life-is-like-a-box-of-chocola" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:367 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is the meaning and significance of the quote "Life is like a box of chocolates"?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-serverfault" title="Server Fault"></div><a href="http://serverfault.com/questions/825911/should-i-be-concerned-that-swap-is-being-used-on-a-host-with-nearly-40gb-of-free" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:2 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Should I be concerned that swap is being used on a host with nearly 40GB of free memory?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="http://tex.stackexchange.com/questions/348676/adding-symbols-wherever-i-want-in-a-commutative-diagram" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Adding symbols wherever I want in a commutative diagram
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-french" title="French Language Stack Exchange"></div><a href="http://french.stackexchange.com/questions/24171/how-else-rhetorical-question" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:299 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    'How else...' (Rhetorical question)
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/67779/how-would-an-advanced-civilization-have-constant-communication-between-planets" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How would an advanced civilization have constant communication between planets?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-skeptics" title="Skeptics Stack Exchange"></div><a href="http://skeptics.stackexchange.com/questions/36652/can-you-predict-a-number-that-is-randomly-chosen-by-a-person-better-than-chanc" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:212 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can you predict a number that is "randomly" chosen by a person better than chance?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-physics" title="Physics Stack Exchange"></div><a href="http://physics.stackexchange.com/questions/304837/in-what-order-would-light-bulbs-in-series-light-up-when-you-close-a-long-circuit" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:151 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    In what order would light bulbs in series light up when you close a long circuit?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/41652947/why-does-fdouble-x-is-a-better-match-than-fdouble-x" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why does f(Double x) is a better match than f(double... x)?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/47980/a-deceptive-encryption" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    A Deceptive enCRYPTion
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-graphicdesign" title="Graphic Design Stack Exchange"></div><a href="http://graphicdesign.stackexchange.com/questions/83233/illustrator-stop-gradient-from-applying-to-new-objects" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:174 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Illustrator: stop gradient from applying to new objects
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/47987/empty-sudoku-puzzle" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Empty sudoku puzzle
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-bicycles" title="Bicycles Stack Exchange"></div><a href="http://bicycles.stackexchange.com/questions/44772/city-bikes-vs-e-bikes-with-baby-trailer" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:126 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    City Bikes vs E-Bikes with baby trailer
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/106656/bit-run-rundown" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Bit run rundown
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-mathematica" title="Mathematica Stack Exchange"></div><a href="http://mathematica.stackexchange.com/questions/135354/function-to-draw-densely-interconnected-layers-in-graph-e-g-neural-net" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:387 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Function to draw densely interconnected layers in graph (e.g., neural net)
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-skeptics" title="Skeptics Stack Exchange"></div><a href="http://skeptics.stackexchange.com/questions/36695/are-there-96-million-workers-in-the-us-who-want-a-job-and-cant-get-one" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:212 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Are there 96 million workers in the US who want a job and can't get one?
+                </a>
+
+            </li>
+    </ul>
+
+        
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://stackoverflow.com/feeds/question/23520208" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/23520208/ivc/2bee');});
+</script>
+<noscript>
+    <div><img src="/posts/23520208/ivc/2bee" class="dno" alt="" width="0" height="0"></div>
+</noscript><div style="display:none" id="prettify-lang">default</div></div>
+
+
+        </div>
+    </div><script async="" src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/clc.js"></script>
+    <div id="footer" class="categories">
+        <div class="footerwrap">            
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                    <a href="http://stackoverflow.com/company/about">about us</a>
+                        <a href="http://stackoverflow.com/tour">tour</a>
+                    <a href="http://stackoverflow.com/help">help</a>
+                    <a href="http://stackoverflow.blog/?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com/">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackoverflow.com/company/work-here">work here</a>
+                    <a href="https://www.stackoverflowbusiness.com/advertise">advertising info</a>
+
+                    <a onclick='StackExchange.switchMobile("on")'>mobile</a>
+                    <b><a href="http://stackoverflow.com/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="3">
+                Technology
+            </th>
+            <th>
+                Life / Arts
+            </th>
+            <th>
+                Culture / Recreation
+            </th>
+            <th>
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                        <li><a href="http://softwareengineering.stackexchange.com/" title="professionals, academics, and students working within the systems development life cycle who care about creating, delivering, and maintaining software responsibly">Software Engineering</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="information security professionals">Information Security</a></li>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Wolfram Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="http://expressionengine.stackexchange.com/" title="administrators, end users, developers and designers for ExpressionEngine® CMS">ExpressionEngine® Answers</a></li>
+                        <li><a href="http://crypto.stackexchange.com/" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://codereview.stackexchange.com/" title="peer programmer code reviews">Code Review</a></li>
+                        <li><a href="http://magento.stackexchange.com/" title="users of the Magento e-Commerce platform">Magento</a></li>
+                        <li><a href="http://dsp.stackexchange.com/" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                        <li><a href="http://raspberrypi.stackexchange.com/" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                        <li><a href="http://codegolf.stackexchange.com/" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://movies.stackexchange.com/" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="http://music.stackexchange.com/" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (8)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://ell.stackexchange.com/" title="speakers of other languages learning English">English Language Learners</a></li>
+                        <li><a href="http://japanese.stackexchange.com/" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                        <li><a href="http://anime.stackexchange.com/" title="anime and manga fans">Anime &amp; Manga</a></li>
+                        <li><a href="http://mechanics.stackexchange.com/" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (17)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://chemistry.stackexchange.com/" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="http://biology.stackexchange.com/" title="biology researchers, academics, and students">Biology</a></li>
+                        <li><a href="http://cs.stackexchange.com/" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                        <li><a href="http://philosophy.stackexchange.com/" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (3)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="https://www.stackoverflowbusiness.com/talent">Stack Overflow Talent</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+            <div id="copyright">
+                site design / logo © 2017 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2017.1.13.24681
+            </div>
+                </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="https://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    
+    
+        
+        ados.run.push(function () {
+                setTimeout(function () { $("#adzerk-user-match").remove(); }, window.AUMIframeDone ? 0 : 2000);
+                ados_setKeywords('java,xml,xml-parsing');; ados_load();
+        });   
+        
+</script>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                ga('create', 'UA-5620270-1');
+                ga('create', 'UA-5620270-59', {name: 'pageData', sampleRate: 5 });
+                ga('set', 'dimension2', '|java|xml|xml-parsing|');
+                ga('pageData.set', 'dimension2', '|java|xml|xml-parsing|');
+                ga('send', 'pageview');
+                ga('pageData.send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+                qc.async = true;
+                qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                s.parentNode.insertBefore(qc, s);
+                _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                            var sc=document.createElement('script');
+                sc.async=true;
+                sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+                s.parentNode.insertBefore(sc, s);
+                _comscore.push({ c1: "2", c2: "17440561" });
+        })();
+
+    </script>
+        
+    
+            <script type="text/javascript">
+                
+                (function(appendChild) {
+                    Node.prototype.appendChild = function() {
+                        var parent = this;
+                        var newNode = arguments[0];
+                        if (parent.nodeName === 'HEAD'
+                            && newNode
+                            && newNode.nodeName === 'SCRIPT'
+                            && newNode.src) {
+                            
+                            window.setTimeout(function() {
+                                var result = newNode.src.match(/^https:\/\/maps\.googleapis\.com\/maps\/api\/place\/js\/(\w+)Service\./i) || [];
+                                var service = result[1];
+                                if (service) {
+                                    if (service === 'Autocompletion') service =  2;
+                                    else if (service === 'Place') service = 1;
+                                    else service = 0;
+                                    StackExchange.using('gps', function() {
+                                        StackExchange.gps.track('google_maps_places_api.call', { service: service });
+                                    });
+                                }
+                            }, 0);
+                        }
+                        return appendChild.apply(this, arguments);
+                    };
+                })(Node.prototype.appendChild);
+            </script>
+    
+<img src="How%20to%20create%20XML%20file%20with%20specific%20structure%20in%20Java%20-%20Stack%20Overflow_files/timeout.gif" style="display: none;"></body></html>
