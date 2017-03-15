@@ -17,7 +17,7 @@ public class NekrentinaUI {
 	public static ArrayList<Vlasnik> sviVlasnici = new ArrayList<Vlasnik>();
 	public static ArrayList<Nekretnina> sveNekretnine = new ArrayList<Nekretnina>(); 
     public static HashSet<String> svaMesta = new HashSet<>();
-
+    private static double KOEF_KVAL = 0.8, STOPA_AMOR = 0.04, POR_STOPA = 0.4; 
 	public static void prikaziSveNekretninePoVlasniku() {
 		
 		System.out.println("Prikazi nekretnine odredjenog vlasnika");
@@ -34,18 +34,13 @@ public class NekrentinaUI {
 		if(v != null) {
 			// ovde pokazati dao
 			System.out.println(NekretninaDAO.prikaziNekretninuVlasnika(AppUI.conn, v).toString());
-			
-		}
-		
+		}	
 		else 
 			System.out.println("Ne postoji trazeni vlasnik");
-		
-		
-		
+
 	}
 
 	public static void promeniVlasnikaNekretnine() {
-		
 		
 		System.out.println("Sve nekretnine");
 		System.out.println();
@@ -85,14 +80,10 @@ public class NekrentinaUI {
 			System.out.println(s);
 			for(Nekretnina n : sveNekretnine) {
 				if(n.getAdresa().contains(s)) {
-					double kamata; 
-					if(n.getAdresa().equals(n.getVlasnik().getAdresa()))
-						kamata = 0.5; 
-					else
-						kamata = 1; 
-					System.out.println("\t" + n.getVlasnik() + " " + ((n.getVrednost() * 0.8) - (n.getVrednost() * 0.04)) * 0.4 * kamata);
+					double UMANJ_PORES_SUMA = (n.getAdresa().equals(n.getVlasnik().getAdresa())) ? 0.5 : 1; 
+					System.out.println("\t" + n.getVlasnik() + " " + 
+					((n.getVrednost() * KOEF_KVAL) - (n.getVrednost() * STOPA_AMOR)) * POR_STOPA * UMANJ_PORES_SUMA);
 				}
-				
 			}
 		}
 	}
